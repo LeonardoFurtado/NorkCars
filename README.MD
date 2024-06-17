@@ -1,11 +1,4 @@
-# Tests
 
-Just run
-```
-pytest
-```
-
----
 
 # Build project
 
@@ -14,6 +7,24 @@ docker-compose up --build
 ```
 
 ---
+
+# Tests
+
+Just run
+```
+docker exec -it norkcars_web_1 pytest
+```
+
+where norkcars_web_1 is the container name.
+
+to avoid run containers you can use pipenv:
+
+```
+pipenv shell
+pipenv install
+pytest
+```
+the postgresql is not necessary to run the tests.
 
 # Auth
 

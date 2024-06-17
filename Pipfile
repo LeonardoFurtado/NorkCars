@@ -11,6 +11,8 @@ flask-bcrypt = "*"
 marshmallow = "*"
 pytest-flask = "*"
 flask-testing = "*"
+flask-migrate = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
