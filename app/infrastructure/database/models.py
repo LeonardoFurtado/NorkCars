@@ -18,7 +18,7 @@ class Owner(db.Model):
             "id": self.id,
             "name": self.name,
             "sale_opportunity": self.sale_opportunity,
-            "cars": self.cars,
+            "cars": [car.to_dict() for car in self.cars],
         }
 
 
